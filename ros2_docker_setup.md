@@ -1,12 +1,12 @@
 ## **Summary of Docker + ROS 2 setup**###
 
----
+
 
 ## Goal:
 
 **set up ROS 2 Foxy** in a **Docker container**, while keeping the code **editable from Windows**, and follow a clean workspace structure.
 
----
+
 
 ### 1. **Installation Of Docker**
 
@@ -17,7 +17,7 @@
   docker run -d -p 8080:80 docker/welcome-to-docker
   ```
 
----
+
 
 ### 2. **Understanding Docker Image vs Container**
 
@@ -25,7 +25,7 @@
 * **Container**: A running instance of that image — like a live program session.
 * You use `docker run` to create and start a container from an image.
 
----
+
 
 ### 3. **Workspace Location**
 
@@ -35,7 +35,7 @@
   `C:\Users\DOPPS\Desktop\my_ros_project\src`
 * Why? ROS 2 workspaces **must** contain a `src` folder where packages are stored and built using `colcon`.
 
----
+
 
 ### 4. **Created the Directory**
 
@@ -45,7 +45,6 @@
   mkdir -p "C:\Users\DOPPS\Desktop\my_ros_project\src"
   ```
 
----
 
 ### 5. **Running the Docker Container**
 
@@ -70,14 +69,14 @@
 
 This lets you work with ROS 2 inside Linux without needing Ubuntu installed.  
 
----
+
 
 ### 6. **Why Mounting Was Important**
 
 * This lets  **edit files on Windows** (VS Code, GitHub, etc.) while still **building and running them in Linux** (inside the container).
 * The container sees your ROS packages inside `/my_ros_project/src`.
 
----
+
 
 ### 7. **Optional Tmux Use**
 
