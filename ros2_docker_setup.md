@@ -1,4 +1,4 @@
-**summary of Docker + ROS 2 setup**
+##**Summary of Docker + ROS 2 setup**###
 
 ---
 
@@ -61,14 +61,12 @@
   * `--name my_ros_project`: Names the container.
   * `ros:foxy`: Uses the ROS 2 Foxy image.
 
-What this did:
-🔸 Starts a container using the official ROS 2 Foxy image
+* What this did:
 
-🔸 Mounts your local folder into the container at /my_ros_project/src
-
-🔸 Names the container my_ros_project
-
-🔸 Opens an interactive terminal into that container
+  * Starts a container using the official ROS 2 Foxy image
+  * Mounts your local folder into the container at /my_ros_project/src
+  * Names the container my_ros_project
+  * Opens an interactive terminal into that container
 
 This lets you work with ROS 2 inside Linux without needing Ubuntu installed.  
 
