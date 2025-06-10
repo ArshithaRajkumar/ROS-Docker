@@ -1,4 +1,4 @@
-##**Summary of Docker + ROS 2 setup**###
+## **Summary of Docker + ROS 2 setup**###
 
 ---
 
