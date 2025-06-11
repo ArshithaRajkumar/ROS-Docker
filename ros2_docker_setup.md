@@ -1,6 +1,4 @@
-## **Summary of Docker + ROS 2 setup**###
-
-
+## **Summary of Docker + ROS 2 setup**
 
 ## Goal:
 
@@ -89,3 +87,4 @@ This lets you work with ROS 2 inside Linux without needing Ubuntu installed.
   * **Exit** with `exit` or `Ctrl + d`
 
 ---
+
