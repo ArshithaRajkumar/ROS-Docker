@@ -29,15 +29,23 @@ cd "/c/Users/DOPPS/Desktop/ROS Object/<the corresponding file>"
 ### 3. **Check Git status**:
 
 ```bash
+git init
 git status
 ```
 
 You should see your markdown file (`the corresponding file.md`) listed under *untracked* or *modified files*.
 
-### 4. **Add the file**:
+### 4. **Track and Add the file**:
 
 ```bash
-git add the corresponding file.md
+git remote add origin <rep link>
+git add thecorrespondingfile.md
+```
+
+To add whole folder 
+
+```bash
+git add .
 ```
 
 ### 5. **Commit the file**:
@@ -52,7 +60,15 @@ git commit -m "Add notes"
 git push origin main
 ```
 
----
+
+### 6. **Sometimes you might need to remove when it didnot commit the rep**:
+
+```bash
+git remote remove origin
+```
+
+
+
 
 ###  Final Result
 
